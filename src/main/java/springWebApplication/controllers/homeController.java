@@ -16,12 +16,11 @@ public class homeController {
 
 
     @RequestMapping("home")
-    public ModelAndView controllerHome(@RequestParam("name") String myName){
+    public ModelAndView controllerHome(sampleData sampleD){
 
-
-        System.out.println(" ====> home request ===> :  " + myName);
+        System.out.println(" ====> home request ===> :  " + sampleD);
         ModelAndView mv = new ModelAndView();
-       mv.addObject("response", myName);
+       mv.addObject("obj",sampleD);
        mv.setViewName("home.jsp");
         return mv;
 

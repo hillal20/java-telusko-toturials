@@ -7,7 +7,7 @@
 
 <body>
 <div> Hello word s</div>
-<div>${response}</div>
+<div>${obj.id}, ${obj.sampleName}, ${obj.language} </div>
 
 </body>
 </html>
